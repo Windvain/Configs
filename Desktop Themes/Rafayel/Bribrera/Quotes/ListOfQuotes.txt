@@ -1,0 +1,38 @@
+<quote>”Don't cry because it's over, smile because it happened.”
+<author>Albert Einstein
+
+<quote>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”
+<author>Elbert Hubbard
+
+<quote>“A friend is someone who knows all about you and still loves you.”
+<author>Jane Five
+
+<quote>“That which does not kill us makes us stronger.”
+<author>Friedrich Nietzsche
+
+<quote>“If you judge people, you have no time to love them.”
+<author>Mother Teresa
+
+<quote>“Everything you can imagine is real.”
+<author>Pablo Picasso
+
+<quote>“If you tell the truth, you don’t have to remember anything.”
+<author>Mark Twain
+
+<quote>“Many of life’s failures are people who did not realize how close they were to success when they gave up.”
+<author>Thomas Edison
+
+<quote>“Life is too short to spend another day at war with yourself.”
+<author>Confucius
+
+<quote>“Be a voice, not an echo.”
+<author>Albert Einstein
+
+<quote>“No matter the time of day, no matter who is watching, and no matter what the situation, personal integrity doesn’t take a holiday.”
+<author>Byron Pulsifer
+
+<quote>“We ARE our choices.”
+<author>J.P. Sartre
+
+<quote>“There is no beauty without some strangeness.”
+<author>Edgar Allen Poe
