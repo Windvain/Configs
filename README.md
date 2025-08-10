@@ -6,10 +6,8 @@ My configurations are not very clearly documented, so have fun trying to use it 
 ## Prerequisites:
 - The latest release of [Neovim](https://neovim.io).
 - The GUI Neovim client [Neovide](https://github.com/neovide/neovide). (*Optional*)
-<br>
 - [Git](https://git-scm.com) and [LazyGit](https://github.com/jesseduffield/lazygit).
 - [RipGrep](https://github.com/BurntSushi/ripgrep) for file searching.
-<br>
 - For editing C/C++ files, [ccls](https://github.com/MaskRay/ccls).
 - CMake syntax highlighting via [cmake-language-server](https://github.com/regen100/cmake-language-server)
 
@@ -18,7 +16,6 @@ MacOS and Linux are not officially supported because I am not using them at the 
 
 # Desktop Theme Configuration
 These themes are for Windows only, if I ever do start customizing my desktop on other operating systems, there will be a seperate directory for that.
-<br>
 ## Prerequisites:
 - [Rainmeter](https://www.rainmeter.net) for adding custom themes and widgets.
 
