@@ -16,6 +16,7 @@ vim.opt.wrap = false
 
 if vim.g.neovide then
     vim.o.guifont = "FiraCode Nerd Font:h14"
+	vim.g.neovide_fullscreen = true
 end
 
 -- Define custom UI elements for certain plugins.

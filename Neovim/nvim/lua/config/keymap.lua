@@ -32,9 +32,16 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end
 })
 
+-- neotree command.
+vim.keymap.set("n", "<leader>tt", "<cmd>Neotree<cr>", {})
+
 -- nvim-dap commands.
 -- All debugger related shortcuts start with <leader>d*
+-- except for <leader>dd of course.
 local dap = require("dap")
+vim.keymap.set(
+	"n", "<leader>dr", "<cmd>DapNew<cr>", { desc = "Run an executable with a debugger" })
+
 vim.keymap.set(
 	"n", "<leader>db",
 	function() dap.toggle_breakpoint() end,

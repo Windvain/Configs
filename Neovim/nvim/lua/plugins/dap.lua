@@ -23,6 +23,22 @@ return {
 		dap.listeners.before.event_exited.dapui_config = function()
 			dap_view.close()
 		end
+
+		dap.configurations.cpp = {
+			{
+				name = "Debug Executable",
+				type = "codelldb",
+				request = "launch",
+				program = function()
+					return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. vim.g.maplocalleader, "file")
+				end,
+
+				cwd = "${workspaceFolder}",
+				stopOnEntry = true,
+				args = {}
+			}
+		}
+
 		dap.configurations.h = dap.configurations.cpp
 	end
 }
