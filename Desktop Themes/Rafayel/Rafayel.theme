@@ -41,7 +41,7 @@ Wait=%SystemRoot%\cursors\aero_busy.ani
 DefaultValue=Windows Default
 
 [Control Panel\Desktop]
-Wallpaper=%USERPROFILE%\AppData\Local\Packages\Microsoft.Windows.Photos_8wekyb3d8bbwe\LocalState\PhotosAppBackground\Rafayel.jpg
+Wallpaper=Rafayel.jpg
 Pattern=
 MultimonBackgrounds=0
 PicturePosition=4

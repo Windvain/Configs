@@ -2,8 +2,8 @@
 
 [Theme]
 ; Windows - IDS_THEME_DISPLAYNAME_AERO_LIGHT
-DisplayName=Sunday and Robin
-ThemeId={813F8117-D35D-4D4B-A32A-8DA6DB14D2F4}
+DisplayName=Rafayel (Golden)
+ThemeId={82B35B26-4274-4FFE-AC37-997C950F2379}
 
 ; Computer - SHIDI_SERVER
 [CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\DefaultIcon]
@@ -41,11 +41,11 @@ Wait=%SystemRoot%\cursors\aero_busy.ani
 DefaultValue=Windows Default
 
 [Control Panel\Desktop]
-Wallpaper=Sunday and Robin.jpg
+Wallpaper=Rafayel (Golden).jpg
 Pattern=
 MultimonBackgrounds=0
 PicturePosition=4
-WallpaperWriteTime=133891041820664043
+WallpaperWriteTime=134033424811961118
 WindowsSpotlight=0
 
 [VisualStyles]
@@ -53,7 +53,7 @@ Path=%SystemRoot%\resources\themes\Aero\Aero.msstyles
 ColorStyle=NormalColor
 Size=NormalSize
 AutoColorization=0
-ColorizationColor=0XC4CA5010
+ColorizationColor=0XC4FF8C00
 SystemMode=Dark
 AppMode=Dark
 VisualStyleVersion=10
