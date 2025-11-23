@@ -1,3 +1,12 @@
+-- Neovide settings
+if vim.g.neovide then
+	vim.keymap.set("n", "<S-F11>",
+		function()
+			vim.g.neovide_fullscreen = not vim.g.neovide_fullscreen
+		end,
+		{ silent = true })
+end
+
 -- nvim-telescope commands.
 -- Find commands start with <leader>f*
 -- Search commands start with <leader>s*
@@ -14,7 +23,6 @@ vim.keymap.set("n", "<leader>gf", tele_cmd.git_files, { desc = "Use telescope.nv
 vim.keymap.set("n", "<leader>gc", tele_cmd.git_commits, { desc = "Use telescope.nvim to list git commits" })
 vim.keymap.set("n", "<leader>gb", tele_cmd.git_branches, { desc = "Use telescope.nvim to list git branches" })
 vim.keymap.set("n", "<leader>gs", tele_cmd.git_status, { desc = "Use telescope.nvim to list git status" })
-vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open LazyGit" })
 
 -- nvim-lspconfig commands.
 -- All language commands start with <leader>l*

@@ -30,17 +30,17 @@ require("lazy").setup({
 })
 
 -- If it's not broke don't fix it..
-local lspconf = require("lspconfig")
-local lspconf_defaults = lspconf.util.default_config
+local lspconf = vim.lsp.config
+local lspconf_defaults = {
+	capabilities = vim.tbl_deep_extend(
+		"force",
+		vim.lsp.protocol.make_client_capabilities(),
+		require("cmp_nvim_lsp").default_capabilities()
+	)
+}
 
-lspconf_defaults.capabilities = vim.tbl_deep_extend(
-	"force",
-	lspconf_defaults.capabilities,
-	require("cmp_nvim_lsp").default_capabilities()
-)
-
-lspconf.cmake.setup({})
-lspconf.ccls.setup{
+vim.lsp.config("cmake", {  })
+vim.lsp.config("ccls", {
 	name = "ccls",
 
 	autostart = true,
@@ -51,12 +51,13 @@ lspconf.ccls.setup{
 		compilationDatabaseDirectory = "build"
 	},
 
-	root_dir = lspconf.util.root_pattern(
-		".git",
-		".editorconfig",
-		".clang-format"
-	)
-}
+	root_dir = function(bufnr, on_dir)
+		on_dir(vim.fs.root(bufnr, { ".git", ".editorconfig", ".clang-format" }))
+	end
+})
+
+vim.lsp.enable("cmake")
+vim.lsp.enable("ccls")
 
 local cmp = require("cmp")
 cmp.setup({
