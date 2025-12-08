@@ -18,6 +18,10 @@ MacOS and Linux are not officially supported because I am not using them at the 
 These themes are for Windows only, if I ever do start customizing my desktop on other operating systems, there will be a seperate directory for that.
 ## Prerequisites:
 - [Rainmeter](https://www.rainmeter.net) for adding custom themes and widgets.
+- [Windhawk](https://windhawk.net/) for customizing the taskbar.
 
 1. Apply the `.theme` file on your Windows machine.
 2. Then copy the Rainmeter skin into your Rainmeter skin directory (typically in `C:\\Users\\<your user name here>\\Documents\\Rainmeter\Skins`)
+
+3. Install the Windows 11 Taskbar Styler mod on Windhawk.
+3. Copy and paste the text in the `Additional Styles.txt` file into the text box under `Advanced > Mod Settings`

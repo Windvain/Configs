@@ -1,1 +1,16 @@
-{"theme":"WindowGlass","controlStyles[0].target":"Taskbar.TaskbarFrame > Grid#RootGrid","controlStyles[0].styles[0]":"Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeAltHighColor}\" TintOpacity=\"0.3\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />","styleConstants[0]":"","resourceVariables[0].variableKey":"","resourceVariables[0].value":""}
+{
+  "theme": "Squircle",
+  "controlStyles[0].target": "Grid#SystemTrayFrameGrid",
+  "controlStyles[0].styles[0]": "Background:=<AcrylicBrush TintColor=\"Black\" TintOpacity=\"0.9\" />",
+  "styleConstants[0]": "",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": "",
+  "controlStyles[1].target": "Taskbar.TaskListLabeledButtonPanel@CommonStates > Border#BackgroundElement",
+  "controlStyles[1].styles[0]": "Background:=<AcrylicBrush TintColor=\"Black\" TintOpacity=\"0.9\" />",
+  "controlStyles[1].styles[1]": "Background@InactivePointerOver:=<AcrylicBrush TintColor=\"Black\" TintOpacity=\"0.9\" />",
+  "controlStyles[1].styles[2]": "Background@ActivePointerOver:=<AcrylicBrush TintColor=\"Black\" TintOpacity=\"0.9\" />",
+  "controlStyles[1].styles[3]": "Background@ActiveNormal:=<AcrylicBrush TintColor=\"Black\" TintOpacity=\"0.9\" />",
+  "controlStyles[1].styles[4]": "Background@InactiveNormal:=<AcrylicBrush TintColor=\"Black\" TintOpacity=\"0.9\" />",
+  "controlStyles[1].styles[5]": "Background@InactivePressed:=<AcrylicBrush TintColor=\"Black\" TintOpacity=\"0.9\" />",
+  "controlStyles[1].styles[6]": "Background@ActivePressed:=<AcrylicBrush TintColor=\"Black\" TintOpacity=\"0.9\" />"
+}
