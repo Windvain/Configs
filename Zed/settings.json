@@ -1,0 +1,107 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "format_on_save": "off",
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "agent": {
+    "enable_feedback": false,
+    "single_file_review": false,
+    "model_parameters": []
+  },
+  "disable_ai": true,
+  "bottom_dock_layout": "contained",
+  "preview_tabs": {
+    "enable_preview_file_from_code_navigation": false,
+    "enable_preview_from_multibuffer": false,
+    "enable_preview_from_project_panel": false,
+    "enabled": false
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show": true,
+    "show_tab_bar_buttons": false
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": false,
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_branch_icon": true,
+  },
+  "debugger": {
+    "button": true,
+  },
+  "search": {
+    "button": true,
+  },
+  "diagnostics": {
+    "button": true,
+  },
+  "terminal": {
+    "button": true,
+  },
+  "status_bar": {
+    "cursor_position_button": true,
+    "active_language_button": true,
+  },
+  "base_keymap": "None",
+  "show_wrap_guides": true,
+  "buffer_line_height": "comfortable",
+  "auto_update": false,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "session": {
+    "restore_unsaved_buffers": false,
+  },
+  "use_system_path_prompts": true,
+  "project_panel": {
+    "button": true,
+    "dock": "right",
+  },
+  "ui_font_family": "Inter 18pt 18pt",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "toolbar": {
+    "quick_actions": false,
+    "selections_menu": false,
+    "agent_review": false,
+    "breadcrumbs": false,
+  },
+  "vim_mode": false,
+  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "ui_font_size": 17.0,
+  "buffer_font_size": 17.0,
+  "theme": "Catppuccin Mocha",
+
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": ["--header-insertion=never"],
+      },
+    },
+  },
+
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+  },
+
+  "max_tabs": 1,
+  "wrap_guides": [ 80, 100 ]
+}

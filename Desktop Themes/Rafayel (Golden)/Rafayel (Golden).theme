@@ -41,7 +41,7 @@ Wait=%SystemRoot%\cursors\aero_busy.ani
 DefaultValue=Windows Default
 
 [Control Panel\Desktop]
-Wallpaper=Rafayel (Golden).jpg
+Wallpaper=D:\Configs\Desktop Themes\Rafayel (Golden).jpg
 Pattern=
 MultimonBackgrounds=0
 PicturePosition=4

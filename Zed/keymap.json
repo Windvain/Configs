@@ -1,0 +1,378 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "use_key_equivalents": true,
+    "bindings": {
+      // Mishmash of random key bindings
+      "ctrl-o": "workspace::Open",
+      "enter": "menu::Confirm",
+    },
+  },
+
+  // Command Pallette, not selection menu.
+  {
+    "context": "Picker || Menu",
+    "use_key_equivalents": true,
+    "bindings": {
+      "up": "menu::SelectPrevious",
+      "down": "menu::SelectNext",
+
+      "escape": "menu::Cancel",
+      "enter": "menu::Confirm",
+      "tab": "menu::Confirm",
+    },
+  },
+
+  {
+    "context": "ProjectPanel",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-n": "project_panel::NewFile",
+      "ctrl-shift-n": "project_panel::NewDirectory",
+
+      "up": "menu::SelectPrevious",
+      "down": "menu::SelectNext",
+      "left": "project_panel::CollapseSelectedEntry",
+      "right": "project_panel::ExpandSelectedEntry",
+
+      "ctrl-x": "project_panel::Cut",
+      "ctrl-c": "project_panel::Copy",
+      "ctrl-v": "project_panel::Paste",
+
+      "enter": "project_panel::Open",
+      "f2": "project_panel::Rename",
+      "delete": "project_panel::Trash",
+
+      // Gotta duplicate this so we can open and close the docks correctly.
+      "ctrl-k ctrl-p": "workspace::ToggleRightDock"
+    }
+  },
+
+  {
+    "context": "TerminalPanel",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-k ctrl-t": "workspace::ToggleBottomDock"
+    }
+  },
+
+  {
+    "context": "GitPanel",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-k ctrl-g": "workspace::ToggleRightDock"
+    }
+  },
+
+  {
+    "context": "OutlinePanel",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-k ctrl-o": "workspace::ToggleRightDock"
+    }
+  },
+
+  {
+    "context": "Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "escape": "editor::Cancel",
+      "delete": "editor::Delete",
+      "tab": "editor::Tab",
+      "shift-tab": "editor::Backtab",
+
+      "shift-backspace": "editor::Backspace",
+      "ctrl-backspace": "editor::Backspace",
+      "backspace": "editor::Backspace",
+
+      // Editor navigations.
+      "pageup": "editor::MovePageUp",
+      "alt-pageup": "editor::PageUp",
+      "shift-pageup": "editor::SelectPageUp",
+
+      "pagedown": "editor::MovePageDown",
+      "alt-pagedown": "editor::PageDown",
+      "shift-pagedown": "editor::SelectPageDown",
+
+      "home": [
+        "editor::MoveToBeginningOfLine",
+        {
+          "stop_at_soft_wraps": true,
+          "stop_at_indent": true,
+        },
+      ],
+      "shift-home": [
+        "editor::SelectToBeginningOfLine",
+        {
+          "stop_at_soft_wraps": true,
+          "stop_at_indent": true,
+        },
+      ],
+
+      "end": [
+        "editor::MoveToEndOfLine",
+        {
+          "stop_at_soft_wraps": true,
+        },
+      ],
+      "shift-end": [
+        "editor::SelectToEndOfLine",
+        {
+          "stop_at_soft_wraps": true,
+        },
+      ],
+
+      // Basic editor operations.
+      "ctrl-c": "editor::Copy",
+      "ctrl-v": "editor::Paste",
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-d": "editor::DuplicateLineDown",
+
+      "ctrl-x": "editor::Cut",
+      "shift-delete": "editor::Cut",
+
+      "ctrl-z": "editor::Undo",
+
+      "ctrl-shift-z": "editor::Redo",
+      "ctrl-y": "editor::Redo",
+
+      "f2": "editor::Rename",
+      "f12": "editor::GoToDefinition",
+
+      "ctrl-shift-[": "editor::Fold",
+      "ctrl-shift-]": "editor::UnfoldLines",
+
+      // Basic navigation of the cursor.
+      "up": "editor::MoveUp",
+      "down": "editor::MoveDown",
+      "left": "editor::MoveLeft",
+      "right": "editor::MoveRight",
+
+      "ctrl-up": "editor::LineUp",
+      "ctrl-down": "editor::LineDown",
+
+      "ctrl-left": "editor::MoveToPreviousWordStart",
+      "ctrl-right": "editor::MoveToNextWordEnd",
+
+      "shift-up": "editor::SelectUp",
+      "shift-down": "editor::SelectDown",
+      "shift-left": "editor::SelectLeft",
+      "shift-right": "editor::SelectRight",
+
+      "alt-up": "editor::MoveLineUp",
+      "alt-down": "editor::MoveLineDown",
+
+      "ctrl-shift-home": "editor::SelectToBeginning",
+      "ctrl-shift-end": "editor::SelectToEnd",
+      "ctrl-shift-left": "editor::SelectToPreviousWordStart",
+      "ctrl-shift-right": "editor::SelectToNextWordEnd",
+
+      "ctrl-alt-up": ["editor::AddSelectionAbove", { "skip_soft_wrap": true }],
+      "ctrl-alt-down": [
+        "editor::AddSelectionBelow",
+        { "skip_soft_wrap": true },
+      ],
+    },
+  },
+
+  // This should be above Editor && meow, because it overrides the Enter
+  // keypress.
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "enter": "editor::Newline",
+      "shift-enter": "editor::Newline",
+
+      "ctrl-f": "buffer_search::Deploy",
+      "ctrl-h": "buffer_search::DeployReplace",
+    },
+  },
+
+  {
+    "context": "Editor && renaming",
+    "use_key_equivalents": true,
+    "bindings": {
+      "enter": "editor::ConfirmRename",
+    },
+  },
+
+  {
+    "context": "Editor && showing_completions",
+    "use_key_equivalents": true,
+    "bindings": {
+      "enter": "editor::ConfirmCompletion",
+      "shift-enter": "editor::ConfirmCompletionReplace",
+      "tab": "editor::ComposeCompletion"
+    }
+  },
+
+  {
+    "context": "Editor && showing_code_actions",
+    "use_key_equivalents": true,
+    "bindings": {
+      "enter": "editor::ConfirmCodeAction"
+    },
+  },
+
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "use_key_equivalents": true,
+    "bindings": {
+      "up": "editor::ContextMenuPrevious",
+      "down": "editor::ContextMenuNext",
+      "pageup": "editor::ContextMenuFirst",
+      "pagedown": "editor::ContextMenuLast",
+    },
+  },
+
+  {
+    "context": "Editor && showing_signature_help && !showing_completions",
+    "use_key_equivalents": true,
+    "bindings": {
+      "up": "editor::SignatureHelpPrevious",
+      "down": "editor::SignatureHelpNext",
+    },
+  },
+
+  {
+    "context": "Pane",
+    "use_key_equivalents": true,
+    "bindings": {
+      // For people who hold Ctrl after the chord keybind. a.k.a me.
+      "ctrl-w q": "pane::CloseActiveItem",
+      "ctrl-w ctrl-q": "pane::CloseActiveItem",
+
+      "ctrl-w up": "pane::SplitUp",
+      "ctrl-w down": "pane::SplitDown",
+      "ctrl-w left": "pane::SplitLeft",
+      "ctrl-w right": "pane::SplitRight",
+
+      "ctrl-w ctrl-up": "pane::SplitUp",
+      "ctrl-w ctrl-down": "pane::SplitDown",
+      "ctrl-w ctrl-left": "pane::SplitLeft",
+      "ctrl-w ctrl-right": "pane::SplitRight",
+    },
+  },
+
+  {
+    "context": "ContextEditor > Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-s": "workspace::Save",
+    },
+  },
+
+  {
+    "context": "BufferSearchBar",
+    "use_key_equivalents": true,
+    "bindings": {
+      "escape": "buffer_search::Dismiss",
+      "tab": "buffer_search::FocusEditor",
+      "enter": "search::SelectNextMatch",
+      "shift-enter": "search::SelectPreviousMatch",
+      "alt-enter": "search::SelectAllMatches",
+      "ctrl-f": "search::FocusSearch",
+      "ctrl-h": "search::ToggleReplace",
+      "ctrl-l": "search::ToggleSelection",
+    },
+  },
+
+  {
+    "context": "BufferSearchBar && in_replace > Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "enter": "search::ReplaceNext",
+      "ctrl-enter": "search::ReplaceAll",
+    },
+  },
+  {
+    "context": "BufferSearchBar && !in_replace > Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "up": "search::PreviousHistoryQuery",
+      "down": "search::NextHistoryQuery",
+    },
+  },
+  {
+    "context": "ProjectSearchBar",
+    "use_key_equivalents": true,
+    "bindings": {
+      "escape": "project_search::ToggleFocus",
+      "ctrl-shift-f": "search::FocusSearch",
+      "ctrl-shift-h": "search::ToggleReplace",
+    },
+  },
+  {
+    "context": "ProjectSearchBar > Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "up": "search::PreviousHistoryQuery",
+      "down": "search::NextHistoryQuery",
+    },
+  },
+  {
+    "context": "ProjectSearchBar && in_replace > Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "enter": "search::ReplaceNext",
+      "ctrl-alt-enter": "search::ReplaceAll",
+    },
+  },
+  {
+    "context": "ProjectSearchView",
+    "use_key_equivalents": true,
+    "bindings": {
+      "escape": "project_search::ToggleFocus",
+      "ctrl-shift-h": "search::ToggleReplace",
+    },
+  },
+
+  {
+    "context": "Workspace",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-s": "workspace::Save",
+      "ctrl-shift-s": "workspace::SaveAs",
+
+      // Navigation in the workspace.
+      "ctrl-shift-o": "project_symbols::Toggle",
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-tab": "tab_switcher::Toggle",
+      "ctrl-shift-p": "command_palette::Toggle",
+
+      // Keybinds to open panels.
+      "ctrl-k ctrl-t": "terminal_panel::Toggle",
+      "ctrl-k ctrl-f": "pane::DeploySearch",
+      "ctrl-k ctrl-p": "project_panel::ToggleFocus",
+      "ctrl-k ctrl-g": "git_panel::ToggleFocus",
+      "ctrl-k ctrl-d": "debug_panel::ToggleFocus",
+      "ctrl-k ctrl-o": "outline_panel::ToggleFocus",
+      "ctrl-k ctrl-x": "zed::Extensions",
+    },
+  },
+
+//   {
+//     "context": "Workspace && debugger_running",
+//     "use_key_equivalents": true,
+//     "bindings": {
+//       "f5": null,
+//     },
+//   },
+
+  {
+    "context": "Workspace && debugger_stopped",
+    "use_key_equivalents": true,
+    "bindings": {
+      "f5": "debugger::Continue",
+      "f11": "debugger::StepInto",
+      "f10": "debugger::StepOver",
+      "shift-f11": "debugger::StepOut",
+    },
+  },
+]
