@@ -1,4 +1,8 @@
 Credit where credit is due:
+Rafayel 2:
+- Background: https://x.com/_hualushui_ on Twitter
+- Rainmeter Theme: https://www.deviantart.com/apexxx-sensei/art/Eleganto-678591667
+
 Rafayel (Golden):
 - Background: https://x.com/kiyoi_q on Twitter (Fuck X)
 - Rainmeter Theme: https://www.deviantart.com/mrzexx/art/Valorant-1-0-951254399
