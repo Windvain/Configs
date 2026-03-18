@@ -12,6 +12,8 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.expandtab = true
 
+vim.opt.colorcolumn = "80,100"
+
 vim.opt.wrap = false
 vim.g.transparency = 0.88
 vim.o.shell = '"C:\\Program Files\\PowerShell\\7\\pwsh.exe"'

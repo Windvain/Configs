@@ -8,7 +8,7 @@ return {
 
 		dap.adapters.codelldb = {
 			type = "executable",
-			command = "D:\\Binaries\\codelldb\\extension\\adapter\\codelldb.exe",
+			command = "D:\\Programs\\CodeLLDB\\adapter\\codelldb.exe",
 
 			detached = false
 		}

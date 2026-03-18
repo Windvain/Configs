@@ -56,8 +56,15 @@ vim.lsp.config("ccls", {
 	end
 })
 
+vim.lsp.config("clangd", {
+	cmd = { "clangd" },
+	root_markers = { ".git", ".editorconfig", ".clang-format" }
+})
+
 vim.lsp.enable("cmake")
-vim.lsp.enable("ccls")
+-- vim.lsp.enable("ccls")
+
+vim.lsp.enable("clangd")
 
 local cmp = require("cmp")
 cmp.setup({

@@ -6,7 +6,7 @@ return {
 		-- I think this might work for Windows.
 		-- Fuck this plugin, hours spent debugging: 2
 		--
-		-- Remember to compile this plugin using the developer tools, otherwise
+		-- Remember to compile this plugin using "x64 Native Tools Command Prompt for VS", otherwise
 		-- this plugin would be stuck compiling.
 		-- Only tested on Windows, linux setups can set stuff here..
 		if vim.fn.has("win32") then
